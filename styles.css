@@ -1,0 +1,118 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    height: 100vh;
+    background-image: linear-gradient(to right, #3B7BA7, #3B7BA7 50%, white 50%, white);
+}
+* {
+    box-sizing: inherit;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+.police {
+    font-family: 'Cinzel Decorative', cursive;
+}
+.aside{
+    width: 300px;
+    flex: none;
+    background-color:  #3B7BA7;
+}
+.main{
+    flex: auto;
+    background-color:  white;
+    position: relative;
+}
+.aside, .main{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.prenom{
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+}
+.nom{
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #7ba73b;
+}
+.titre{
+    font-weight: bold;
+    font-size: 30px;
+    color: #939393;
+}
+.img_profil{
+    overflow:hidden;
+    border-radius:50%;
+    width: 100%;
+}
+.cartouche{
+    border-top: 1px solid #939393;
+    width: calc(100% - 100px);
+    bottom: 50px;
+    position: absolute;
+    justify-content : space-between;
+    table-layout: fixed;
+}
+td{
+    text-align: center;
+}
+.motiv{
+    background-image: linear-gradient(to right, #367099, #367099 50%,  #f5f5f5 50%,  #f5f5f5);
+}
+.asidemotiv{
+    width: 300px;
+    flex: none;
+    background-color: #367099;
+    color: #333;
+    padding: 50px;
+}
+.maindemotiv{
+    flex: auto;
+    background-color:   #f5f5f5;
+    position: relative;
+    color: #333;
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.75;
+}
+.langues{
+    background-image: linear-gradient(to right, #3B7BA7, #3B7BA7 50%, white 50%, white);
+}
+.langues h2{
+    color: #333;
+}
+.tab{
+    width: 100%;
+
+}
+.tab tr{
+    display :flex;
+    align-items: baseline;
+}
+.tab tr::after{
+    content: "";
+    flex: auto;
+    border-bottom: 1px black dotted;
+    margin: 0 10px;
+}
+.tab tr td{
+    order: 1;
+}
+h3{
+    margin-bottom: 0;
+    color: #7ba73b;
+}
+.coloré{
+    color: #333;
+}
